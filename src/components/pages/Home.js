@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { InfoConsumer} from '../context';
 
 function Home() {
     return (
-        <div>
-            <h2>Home Component ... </h2>
-        </div>
+        <InfoConsumer>
+            { value => {
+                return <h2>{value}</h2>
+            }}
+        </InfoConsumer>
     )
 }
 
