@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from '../logo.svg';
-
+import logo from '../../logo.svg';
+import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand ml-5" href="#">
+                <Link
+                    to="/"
+                    className="navbar-brand ml-5" href="#">
                     <img src={logo} alt="logo" style={{ width: '35px'}} />
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -15,19 +17,24 @@ function Navbar() {
                 <ul className="navbar-nav m-auto me-auto mb-2 mb-lg-0">
 
                     <li className="nav-item">
-                        <a 
+                        <Link 
+                            to="/"
                             className="nav-link text-white text-uppercase active ml-5" 
                             aria-current="page" href="#">Home&nbsp;
                             <i className="fas fa-home"></i>
-                        </a>
+                        </Link>
                     </li>
                     
                     <li className="nav-item">
-                        <a className="nav-link text-white text-uppercase ml-5" href="#">News</a>
+                        <Link
+                            to="/news"
+                            className="nav-link text-white text-uppercase ml-5" href="#">News</Link>
                     </li>
 
                     <li className="nav-item">
-                        <a className="nav-link text-white text-uppercase ml-5" href="#">Contact</a>
+                        <Link
+                            to="contacts" 
+                            className="nav-link text-white text-uppercase ml-5" href="#">Contact</Link>
                     </li>
 
                 </ul>
