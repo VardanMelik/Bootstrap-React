@@ -18,7 +18,7 @@ function Navbar() {
                         <a 
                             className="nav-link text-white text-uppercase active ml-5" 
                             aria-current="page" href="#">Home&nbsp;
-                            <i class="fas fa-home"></i>
+                            <i className="fas fa-home"></i>
                         </a>
                     </li>
                     
