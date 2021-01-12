@@ -6,8 +6,8 @@ function Footer() {
     return(
         <FooterContainer className="main-footer" 
             style={{ 
-                'background-color': '#343a40',
-                'padding-top': '3rem',
+                'backgroundColor': '#343a40',
+                'paddingTop': '3rem',
                 'color': 'white' 
                 }}>
             <div className="footer-middle">
@@ -61,8 +61,8 @@ function Footer() {
                 {/*Footer Botom */}
                 <div className="footer-bottom" 
                     style={{
-                        'padding-top': '3rem',
-                        'padding-bottom': '2rem' 
+                        'paddingTop': '3rem',
+                        'paddingBottom': '2rem' 
                     }}>
                     <p className="text-xs-center">
                         &copy;{new Date().getFullYear()} Bootstrap-React App - All rights reserved.
